@@ -1,0 +1,27 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# timeseriesclassbenchmarksr
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This is me keeping track of the performance of various time series classification benchmarks, like `tsforest` and `bagofpatternsr`.
+
+```{r }
+read.csv("results/results.csv")
+```
+
+
+
+
