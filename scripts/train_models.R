@@ -38,3 +38,7 @@ ggplot(results_long, aes(Benchmark, Accuracy)) +
 
 write.csv(results_df, "results/results.csv")
 
+plot <- ggplot(results_long, aes(Benchmark, Accuracy)) +
+  geom_jitter() + geom_violin(alpha = .1) + coord_flip()
+
+saveRDS(plot, file = "results/plotdata.rds")

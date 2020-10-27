@@ -19,7 +19,10 @@ knitr::opts_chunk$set(
 This is me keeping track of the performance of various time series classification benchmarks, like `tsforest` and `bagofpatternsr`.
 
 ```{r }
-read.csv("results/results.csv")
+library(ggplot2)
+plot <- readRDS(file = "results/plotdata.rds")
+plot + labs(title = "TS Forest Accuracy on Test Set", subtitle = "Multiple iterations with default hyperparameters")
+
 ```
 
 
