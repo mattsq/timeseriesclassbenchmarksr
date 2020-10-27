@@ -3,7 +3,7 @@ library(purrr)
 datasets <- c("ArrowHead",
               "BasicMotions", "BME", "Coffee",
               "ERing", "GunPoint", "ToeSegmentation1",
-              "UMD", "Wine")
+              "UMD", "Wine", "Car", "Earthquakes", "Lightning2", "Lightning7")
 
 download_and_extract <- function(dataset) {
   url <- paste0("http://www.timeseriesclassification.com/Downloads/",dataset,".zip")
