@@ -5,7 +5,7 @@ datasets <- c("ArrowHead",
               "ERing", "GunPoint", "ToeSegmentation1",
               "UMD", "Wine", "Car", "Earthquakes", "Lightning2",
               "Lightning7", "ItalyPowerDemand", "MoteStrain",
-              "Plane")
+              "Plane", "SonyAIBORobotSurface1", "SonyAIBORobotSurface2")
 
 download_and_extract <- function(dataset) {
   url <- paste0("http://www.timeseriesclassification.com/Downloads/",dataset,".zip")

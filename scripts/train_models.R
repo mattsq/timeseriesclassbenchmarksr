@@ -20,7 +20,7 @@ safe_return_tsforest_accuracy <- possibly(return_tsforest_accuracy,
                                           quiet = FALSE)
 
 
-iterate_results <- progressr::with_progress(
+iterate_results <- progressr::with_progress({
   p <- progressor(along = 1:20)
 
   replicate(20, expr = {
@@ -29,7 +29,7 @@ iterate_results <- progressr::with_progress(
   names(results) <- test_datasets
   return(results)
 })
-
+}
 )
 
 results_df <- as.data.frame(t(iterate_results))
